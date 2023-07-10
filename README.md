@@ -38,3 +38,4 @@ xor2_base64  综合base64加密 `base64_decode("KD87Xl8o")^base64_decode("SUxIOy
 **`-target` inject需要 注入的目标文件默认为index.php 被注入的页面可以被behinder连接**<br>
 **`-n` xorN的次数**<br>
 **`-all` 生成默认所有webshell**<br>
+图形化界面还在开发，更加复杂加密仍在开发。。。。
