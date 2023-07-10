@@ -17,24 +17,24 @@ python 方式
 `pip install -r requirements.txt`
 ## 用法
 连接的url需要密码<br>
-一般木马的密码为2，behinder的密码为默认的rebeyond
-同时在get请求设置了校验
+一般木马的密码为2，behinder的密码为默认的rebeyond<br>
+同时在get请求设置了校验<br>
 http://127.0.0.1/html/webshell/injectaes_xor2_3.php?1=admin<br>
 这里设置的是一个GET请求1=admin的验证<br>
 如果不是返回404，防止被非上传webshell人员发现<br>
 ![1688955122815](https://github.com/Z0fhack/AvoidkillingPHP/assets/66540608/994b2555-a5e5-4522-b473-1b31211c0e91)
--type 选择webshell的类型:<br>
+**`-type` 选择webshell的类型**:<br>
 default  蚁剑，菜刀，哥斯拉都可以连接<br>
 default_for_aes aes加密并混淆过的webshell<br>
 behinder  冰蝎可以连接<br>
 behinder_for_aes aes加密并混淆过的webshell<br>
 inject 不直接执行命令，向注入木马<br>
 inject_for_aes 对inject的混淆<br>
--e 选择加密类型：<br>
+**`-e `选择加密类型**：<br>
 xor2  xor2加密方式`")[&/-]"^"H(UJ_)" === assert`<br>
 xorN xorN加密方式对其xor拆分多次加密`"%#/@ <"^"#!ak}:"^"*\i*d("^"{q|\)#"^"@co\>#"^"v?Gd\Z" === assert`，需要指定-n 加密次数<br>
 xor2_base64  综合base64加密 `base64_decode("KD87Xl8o")^base64_decode("SUxIOy1c") === assert`<br>
--name webshell的名字可以输入多个
--target inject需要 注入的目标文件默认为index.php 被注入的页面可以被behinder连接
--n xorN的次数
--all 生成默认所有webshell
+**`-name` webshell的名字可以输入多个**<br>
+**`-target` inject需要 注入的目标文件默认为index.php 被注入的页面可以被behinder连接**<br>
+**`-n` xorN的次数**<br>
+**`-all` 生成默认所有webshell**<br>
