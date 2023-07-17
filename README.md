@@ -12,6 +12,8 @@
 ![微信截图_20230708094528](https://github.com/Z0fhack/AvoidkillingPHP/assets/66540608/7b506633-efd7-40ad-92e0-58654252e517)
 ### 使用inject的木马河马webshell无法查杀
 ![微信截图_20230708094448](https://github.com/Z0fhack/AvoidkillingPHP/assets/66540608/a5db1485-b26f-4b65-be19-83f4c073f466)
+### 使用静默inject的火绒无法查杀
+![Uploading 微信截图_20230717162518.png…]()
 ## 安装
 python 方式
 `pip install -r requirements.txt`
@@ -30,6 +32,7 @@ behinder  冰蝎可以连接<br>
 behinder_for_aes aes加密并混淆过的webshell<br>
 inject 不直接执行命令，向注入木马<br>
 inject_for_aes 对inject的混淆<br>
+inject_aes_quiet inject不认证注入，静默注入
 **`-e `选择加密类型**：<br>
 xor2  xor2加密方式`")[&/-]"^"H(UJ_)" === assert`<br>
 xorN xorN加密方式对其xor拆分多次加密`"%#/@ <"^"#!ak}:"^"*\i*d("^"{q|\)#"^"@co\>#"^"v?Gd\Z" === assert`，需要指定-n 加密次数<br>
