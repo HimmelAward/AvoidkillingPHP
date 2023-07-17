@@ -6,8 +6,8 @@ from colorama import Fore
 from itertools import zip_longest,combinations
 from tqdm import tqdm
 
-templates_for_flag3 = ['system_template','template_for_antword','template_for_antword_aes','template_for_behinder','template_for_behinder_aes','template_inject','template_inject_aes']
-templates_for_flag2 = ['default','default_for_aes','behinder','behinder_for_aes','inject','inject_for_aes']
+templates_for_flag3 = ['system_template','template_for_antword','template_for_antword_aes','template_for_behinder','template_for_behinder_aes','template_inject','template_inject_aes','template_inject_aes_quiet']
+templates_for_flag2 = ['default','default_for_aes','behinder','behinder_for_aes','inject','inject_for_aes','inject_aes_quiet']
 def render():
     font = Figlet(font='smslant')
     print(Fore.BLUE + font.renderText("avoiding killing"))
@@ -73,6 +73,7 @@ webshell type:
     behinder_for_aes,
     inject,
     inject_for_aes,
+    inject_aes_quiet
 """)
 parser.add_argument('-e',dest="key",type=str,default='xor2',help="""
 encrypt_type:
