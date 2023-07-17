@@ -13,7 +13,8 @@
 ### 使用inject的木马河马webshell无法查杀
 ![微信截图_20230708094448](https://github.com/Z0fhack/AvoidkillingPHP/assets/66540608/a5db1485-b26f-4b65-be19-83f4c073f466)
 ### 使用静默inject的火绒无法查杀
-![Uploading 微信截图_20230717162518.png…]()
+![微信截图_20230717162518](https://github.com/Z0fhack/AvoidkillingPHP/assets/66540608/f9e8c421-bdab-49ac-9546-7108ebd4271a)
+
 ## 安装
 python 方式
 `pip install -r requirements.txt`
