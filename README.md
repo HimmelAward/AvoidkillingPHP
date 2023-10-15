@@ -44,4 +44,8 @@ xor2_base64  综合base64加密 `base64_decode("KD87Xl8o")^base64_decode("SUxIOy
 **`-all` 生成默认所有webshell**<br>
 ## 列子
 **`python main.py -all`**<br>生成所有木马
+## 部分PHP函数的版本限制
+1.__invoke >= php 5.3.0
+2.assert < php 7.1
+3.通过字符串调用eval < php 7.0
 图形化界面还在开发，更加复杂加密仍在开发。。。。
